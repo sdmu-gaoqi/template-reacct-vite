@@ -17,8 +17,9 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
   "paths": {
-    "@/*": "./src/*"
-  }
+    // 配置导出路径（这里根据自己项目执行修改）
+    "@": ["./src"]
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

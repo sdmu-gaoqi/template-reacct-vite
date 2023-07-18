@@ -1,21 +1,12 @@
-import styles from "./style.module.scss";
 import { useEffect, useRef } from "react";
 import { useUser } from "@/hooks/store";
 import cookie from 'js-cookie'
 
-const Home = () =>{ 
+const Login = () =>{ 
   const { data, action } = useUser();
   const { loading } = data;
   const accountRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
-  console.log(data, 'data')
-
-  useEffect(() => {
-    const nid = cookie.get("nid");
-    if (nid) {
-      action.profile();
-    }
-  }, [action]);
 
   useEffect(() => {
     if (data.nid) {
@@ -25,8 +16,8 @@ const Home = () =>{
 
   return (
     <div>
-      <div className={styles.news}>
-        <ul className={styles.newsList}>
+      <div>
+        <ul>
           当前登录账号: {data?.userInfo?.email}
           <br />
           <input
@@ -55,4 +46,4 @@ const Home = () =>{
     </div>
   );
 };
-export default Home;
+export default Login;
