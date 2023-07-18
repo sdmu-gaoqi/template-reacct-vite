@@ -1,1 +1,1 @@
-# React + Vite + useReducer（模板）
+# React + Vite + redux-tookit(模板)
