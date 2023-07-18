@@ -4,6 +4,11 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      // 配置导出路径（这里根据自己项目执行修改）
+      "@/*": ["src/*"]
+    },
     "isolatedModules": true
   },
   "include": ["vite.config.ts"]
