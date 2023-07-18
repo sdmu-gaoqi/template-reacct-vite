@@ -13,6 +13,9 @@ interface Login {
   expired_in: number
 }
 
-export type ReturnType<T = Record<string, never>> = T & { ret: number; time: number }
+export type ReturnType<T = Record<string, never>> = T & {
+  ret: number
+  time: number
+}
 
 export type ReturnLogin = ReturnType<Login>

@@ -6,8 +6,8 @@ const testSlice = createSlice({
     count: 0,
     userIno: {
       name: '张三',
-      age: 18,
-    },
+      age: 18
+    }
   },
   reducers: {
     addCount: (state) => {
@@ -15,8 +15,8 @@ const testSlice = createSlice({
     },
     reduceCount: (state) => {
       state.count -= 1
-    },
-  },
+    }
+  }
 })
 
 export { testSlice }

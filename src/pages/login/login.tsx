@@ -1,18 +1,16 @@
-import { useEffect, useRef } from "react";
-import { useUser } from "@/hooks/store";
-import cookie from 'js-cookie'
+import { useEffect, useRef } from 'react'
+import { useUser } from '@/hooks/store'
 
-const Login = () =>{ 
-  const { data, action } = useUser();
-  const { loading } = data;
-  const accountRef = useRef<HTMLInputElement>(null);
-  const passwordRef = useRef<HTMLInputElement>(null);
+const Login = () => {
+  const { data, action } = useUser()
+  const accountRef = useRef<HTMLInputElement>(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (data.nid) {
-      action.profile();
+      action.profile()
     }
-  }, [data.nid, action]);
+  }, [data.nid, action])
 
   return (
     <div>
@@ -29,13 +27,13 @@ const Login = () =>{
           <input placeholder="请输入密码" ref={passwordRef} type="password" />
           <button
             onClick={() => {
-              const accountValue = accountRef?.current?.value;
-              const passwordValue = passwordRef?.current?.value;
+              const accountValue = accountRef?.current?.value
+              const passwordValue = passwordRef?.current?.value
               if (accountValue && passwordValue) {
                 action.login({
                   account: accountValue,
-                  password: passwordValue,
-                });
+                  password: passwordValue
+                })
               }
             }}
           >
@@ -44,6 +42,6 @@ const Login = () =>{
         </ul>
       </div>
     </div>
-  );
-};
-export default Login;
+  )
+}
+export default Login

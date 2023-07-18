@@ -1,27 +1,26 @@
-import styles from "./style.module.scss";
-import { useEffect, useRef } from "react";
-import { useUser } from "@/hooks/store";
+import styles from './style.module.scss'
+import { useEffect, useRef } from 'react'
+import { useUser } from '@/hooks/store'
 import cookie from 'js-cookie'
 
-const Home = () =>{ 
-  const { data, action } = useUser();
-  const { loading } = data;
-  const accountRef = useRef<HTMLInputElement>(null);
-  const passwordRef = useRef<HTMLInputElement>(null);
+const Home = () => {
+  const { data, action } = useUser()
+  const accountRef = useRef<HTMLInputElement>(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
   console.log(data, 'data')
 
   useEffect(() => {
-    const nid = cookie.get("nid");
+    const nid = cookie.get('nid')
     if (nid) {
-      action.profile();
+      action.profile()
     }
-  }, [action]);
+  }, [action])
 
   useEffect(() => {
     if (data.nid) {
-      action.profile();
+      action.profile()
     }
-  }, [data.nid, action]);
+  }, [data.nid, action])
 
   return (
     <div>
@@ -38,13 +37,13 @@ const Home = () =>{
           <input placeholder="请输入密码" ref={passwordRef} type="password" />
           <button
             onClick={() => {
-              const accountValue = accountRef?.current?.value;
-              const passwordValue = passwordRef?.current?.value;
+              const accountValue = accountRef?.current?.value
+              const passwordValue = passwordRef?.current?.value
               if (accountValue && passwordValue) {
                 action.login({
                   account: accountValue,
-                  password: passwordValue,
-                });
+                  password: passwordValue
+                })
               }
             }}
           >
@@ -53,6 +52,6 @@ const Home = () =>{
         </ul>
       </div>
     </div>
-  );
-};
-export default Home;
+  )
+}
+export default Home

@@ -14,14 +14,14 @@ const useUser = () => {
       },
       profile: () => {
         return dispatch(userReducer.profileChunk())
-      },
+      }
     }),
-    [dispatch],
+    [dispatch]
   )
 
   return {
     data,
-    action,
+    action
   }
 }
 

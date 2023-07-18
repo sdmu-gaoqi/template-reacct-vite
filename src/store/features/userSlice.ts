@@ -14,7 +14,7 @@ type UserState = {
 const initialState: UserState = {
   loading: false,
   userInfo: {},
-  nid: '',
+  nid: ''
 }
 
 const userSlice = createSlice({
@@ -43,7 +43,7 @@ const userSlice = createSlice({
       cookie.remove('nid')
       cookie.remove('token')
     })
-  },
+  }
 })
 
 export { userSlice }

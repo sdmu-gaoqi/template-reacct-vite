@@ -4,13 +4,13 @@ import { testSlice, userSlice } from './features'
 
 const reducers = combineReducers({
   test: testSlice.reducer,
-  user: userSlice.reducer,
+  user: userSlice.reducer
 })
 
 export const setupStore = (preloadedState?: PreloadedState<AppState>) => {
   return configureStore({
     reducer: reducers,
-    preloadedState,
+    preloadedState
   })
 }
 

@@ -1,26 +1,26 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
-  const nabigate = useNavigate();
+  const nabigate = useNavigate()
   return (
     <div>
       <button
         onClick={() => {
-          nabigate("/login");
+          nabigate('/login')
         }}
       >
         去登录
       </button>
       <button
         onClick={() => {
-          nabigate("/home");
+          nabigate('/home')
         }}
       >
         首页
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
