@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useUser } from '@/hooks/store'
+import { ReactComponent as Sort } from '@/assets/defaultsort.svg'
 
 const Login = () => {
   const { data, action } = useUser()
@@ -15,6 +16,7 @@ const Login = () => {
   return (
     <div>
       <div>
+        <Sort />
         <ul>
           当前登录账号: {data?.userInfo?.email}
           <br />

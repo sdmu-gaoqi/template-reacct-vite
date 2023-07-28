@@ -4,12 +4,14 @@ import { defineConfig } from 'vite'
 import mkcert from 'vite-plugin-mkcert'
 import viteImagemin from 'vite-plugin-imagemin'
 import postCssPxToRem from 'postcss-pxtorem'
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     mkcert(),
+    svgr(),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,

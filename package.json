@@ -30,6 +30,7 @@
     "sass": "^1.63.6",
     "umi-request": "^1.4.0",
     "vite-plugin-mkcert": "^1.16.0",
+    "vite-plugin-svgr": "^3.2.0",
     "wa-utils": "^0.0.9"
   },
   "devDependencies": {

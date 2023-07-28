@@ -16,6 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./",
+    "types": ["vite-plugin-svgr/client"],
     "paths": {
       // 配置导出路径（这里根据自己项目执行修改）
       "@/*": ["./src/*"],
