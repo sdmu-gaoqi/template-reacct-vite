@@ -27,7 +27,8 @@
     "react-router-dom": "^6.8.2",
     "sass": "^1.63.6",
     "umi-request": "^1.4.0",
-    "vite-plugin-mkcert": "^1.16.0"
+    "vite-plugin-mkcert": "^1.16.0",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3",
@@ -47,8 +48,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.0",
-    "typescript": "*",
-    "vite": "^4.1.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7",
     "vite-plugin-imagemin": "^0.6.1"
   },
   "resolutions": {

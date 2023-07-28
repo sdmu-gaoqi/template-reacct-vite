@@ -16,11 +16,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
   "baseUrl": "./",
   "paths": {
     // 配置导出路径（这里根据自己项目执行修改）
-    "@/*": ["src/*"]
+    "@/*": ["src/*"],
+    "@store": ["src/store"]
   },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
