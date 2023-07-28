@@ -3,7 +3,6 @@ import path from 'node:path'
 import { defineConfig } from 'vite'
 import mkcert from 'vite-plugin-mkcert'
 import viteImagemin from 'vite-plugin-imagemin'
-import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -36,8 +35,7 @@ export default defineConfig({
           }
         ]
       }
-    }),
-    tsconfigPaths()
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],

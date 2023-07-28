@@ -28,7 +28,7 @@
     "sass": "^1.63.6",
     "umi-request": "^1.4.0",
     "vite-plugin-mkcert": "^1.16.0",
-    "vite-tsconfig-paths": "^4.2.0"
+    "wa-utils": "^0.0.9"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3",
