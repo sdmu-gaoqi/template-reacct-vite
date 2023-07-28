@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --mode=production",
+    "build:dev": "tsc && vite build --mode=development",
     "preview": "vite preview",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "prepare": "husky install",
@@ -20,6 +21,7 @@
     "log-symbols": "^5.1.0",
     "ora": "^6.1.2",
     "path": "^0.12.7",
+    "postcss-pxtorem": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hooks": "^1.0.1",

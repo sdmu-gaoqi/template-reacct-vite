@@ -4156,6 +4156,11 @@ pngquant-bin@^6.0.0:
     bin-wrapper "^4.0.1"
     execa "^4.0.0"
 
+postcss-pxtorem@^6.0.0:
+  version "6.0.0"
+  resolved "https://npm.papegames.com/postcss-pxtorem/-/postcss-pxtorem-6.0.0.tgz#f228a4d05d8a73f0642eabae950e2b19836366d7"
+  integrity sha1-8iik0F2Kc/BkLquulQ4rGYNjZtc=
+
 postcss@^8.4.26:
   version "8.4.27"
   resolved "https://npm.papegames.com/postcss/-/postcss-8.4.27.tgz#234d7e4b72e34ba5a92c29636734349e0d9c3057"

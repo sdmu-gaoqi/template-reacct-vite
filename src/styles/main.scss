@@ -23,3 +23,13 @@ $mainBgc: #fff2ea;
 @mixin filterBox {
   margin-right: 10px;
 }
+
+@mixin flexBox($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+button {
+  width: 100px;
+}
