@@ -17,7 +17,7 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
-  "baseUrl": ".",
+  "baseUrl": "./",
   "paths": {
     // 配置导出路径（这里根据自己项目执行修改）
     "@/*": ["src/*"]
