@@ -26,7 +26,8 @@
     "react-redux": "^7.x",
     "react-router-dom": "^6.8.2",
     "sass": "^1.63.6",
-    "umi-request": "^1.4.0"
+    "umi-request": "^1.4.0",
+    "vite-plugin-mkcert": "^1.16.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.3",
